@@ -1,0 +1,16 @@
+{
+  "name": "design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "tsc",
+    "dev": "npm run clean && npm run build && node dist/index.js"
+  },
+  "author": "Tanvir Islam Streame",
+  "license": "ISC",
+  "dependencies": {
+    "rimraf": "^3.0.2"
+  }
+}
