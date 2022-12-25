@@ -1,5 +1,5 @@
-import PizzaFactory from "../factory/pizza.factory";
-import Pizza from "../model/pizza.model";
+import PizzaFactory from '../factory/pizza.factory';
+import Pizza from '../model/pizza.model';
 class PizzaStore {
     pizzaFactory: PizzaFactory;
     constructor(pizzaFactory: PizzaFactory) {
@@ -8,7 +8,7 @@ class PizzaStore {
     }
 
     orderPizza(type: string): Pizza {
-        let pizza: Pizza = this.pizzaFactory.createPizza(type);
+        const pizza: Pizza = this.pizzaFactory.createPizza(type);
         pizza.prepare();
         pizza.bake();
         pizza.cut();

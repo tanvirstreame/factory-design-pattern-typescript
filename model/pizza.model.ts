@@ -1,4 +1,4 @@
-import { IPizza } from "../interface/pizza.interface";
+import { IPizza } from '../interface/pizza.interface';
 
 abstract class Pizza implements IPizza {
     name: string;
@@ -12,19 +12,19 @@ abstract class Pizza implements IPizza {
     }
 
     prepare(): void {
-        console.log("prepared");
+        console.log('prepared');
     }
 
     bake(): void {
-        console.log("baked");
+        console.log('baked');
     }
 
     cut(): void {
-        console.log("cut");
+        console.log('cut');
     }
 
     box(): void {
-        console.log("boxed");
+        console.log('boxed');
     }
 }
 

@@ -1,5 +1,5 @@
-import { IPepperoniPizza } from "../interface/pepperoniPizza.interface";
-import Pizza from "./pizza.model";
+import { IPepperoniPizza } from '../interface/pepperoniPizza.interface';
+import Pizza from './pizza.model';
 
 class PepperoniPizza extends Pizza implements IPepperoniPizza {
     pepperoni: number;

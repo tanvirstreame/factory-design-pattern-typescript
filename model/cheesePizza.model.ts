@@ -1,5 +1,5 @@
-import { ICheesePizza } from "../interface/cheesePizza.interface";
-import Pizza from "./pizza.model";
+import { ICheesePizza } from '../interface/cheesePizza.interface';
+import Pizza from './pizza.model';
 
 class CheesePizza extends Pizza implements ICheesePizza {
     cheese: number;
