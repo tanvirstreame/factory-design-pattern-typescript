@@ -5,6 +5,8 @@
   "main": "index.ts",
   "scripts": {
     "clean": "rimraf dist",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "npm run lint -- --fix",
     "build": "tsc",
     "dev": "npm run clean && npm run build && node dist/index.js"
   },
@@ -12,5 +14,10 @@
   "license": "ISC",
   "dependencies": {
     "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
+    "@typescript-eslint/parser": "^5.47.0",
+    "eslint": "^8.30.0"
   }
 }

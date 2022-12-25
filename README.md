@@ -18,10 +18,15 @@ Install the dependencies and devDependencies -
 ```sh
 $ npm install
 ```
-Running the backend project...
+Running the backend project -
 
 ```sh
 $ npm run dev
+```
+Eslint auto fix -
+
+```sh
+$ npm run lint -- --fix
 ```
 
 ----
